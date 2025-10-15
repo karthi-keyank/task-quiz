@@ -5,7 +5,7 @@ import Home from "./pages/HomePage";
 import Header from "./components/common/Header";
 import CreateQuizPage from "./pages/CreateQuizPage";
 import QuizRunnerPage from "./pages/QuizRunnerPage";
-import PageWrapper from "./assets/PageWrapper"; // Make sure this path is correct
+import PageWrapper from "./assets/PageWrapper";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       {showHeader && <Header />}
       <main>
         <AnimatePresence mode="wait">
-          {/* --- ADD THE location AND key PROPS HERE --- */}
+ 
           <Routes location={location} key={location.pathname}>
             <Route
               path="/"
