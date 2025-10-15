@@ -1,37 +1,33 @@
-/* 1. Define the color scheme for our entire app */
-:root {
-  /* Fonts */
-  --font-main: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  /* Colors - Dark Theme inspired by your image */
-  --color-background: #0f0f0f; /* A deep, off-black for the main background */
-  --color-surface: #1e1e1e;    /* A slightly lighter grey for cards and headers */
-  --color-text-primary: rgba(255, 255, 255, 0.87); /* Bright, readable white */
-  --color-text-secondary: #aaa; /* Grey for less important text */
-  --color-primary: #9D4EDD;     /* The vibrant purple from the buttons */
-  --color-primary-hover: #B57BFF; /* A lighter purple for hover effects */
+:root {
+
+  --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --color-background: #0f0f0f;
+  --color-surface: #1e1e1e;
+  --color-text-primary: rgba(255, 255, 255, 0.87);
+  --color-text-secondary: #aaa;
+  --color-primary: #9D4EDD;
+  --color-primary-hover: #B57BFF;
   --color-border: #333;
   --shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  
-  /* Special gradient for main titles, like in the image */
   --gradient-text: linear-gradient(90deg, #B57BFF, #9D4EDD);
 }
 
-/* 2. A universal reset for clean layouts */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 3. Apply the variables to the body */
 body {
   font-family: var(--font-main);
   background-color: var(--color-background);
   color: var(--color-text-primary);
+  
+  -webkit-text-size-adjust: 100%; 
 }
 
-/* 4. Accessible focus ring for keyboard users */
 *:focus-visible {
   outline: 3px solid var(--color-primary);
   outline-offset: 2px;
