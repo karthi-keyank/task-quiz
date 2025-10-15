@@ -1,0 +1,40 @@
+.homepage-container {
+    padding: 20px;
+}
+
+.search-bar-container{
+    margin-bottom: 30px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 500px; 
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 50px;
+  color: var(--color-text-primary);
+  outline: none;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-bar:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px rgba(157, 78, 221, 0.5);
+}
+
+.quiz-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+.empty-state{
+    color: var(--color-text-secondary);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}

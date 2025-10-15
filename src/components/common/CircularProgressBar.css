@@ -1,0 +1,41 @@
+.progress-circle-container {
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.progress-circle-svg {
+
+  transform: rotate(-90deg);
+}
+
+.progress-circle-bg,
+.progress-circle-fg {
+  fill: none;
+}
+
+.progress-circle-bg {
+    stroke: var(--color-border);
+}
+
+.progress-circle-fg {
+
+  stroke: var(--color-primary);
+  stroke-linecap: round; 
+  
+
+  transition: stroke-dashoffset 0.5s ease-out;
+}
+
+.progress-circle-text {
+  
+  transform: rotate(90deg);
+  transform-origin: center; 
+  
+  font-size: 1.5rem;
+  font-weight: bold;
+  fill: var(--color-text-primary);
+  text-anchor: middle; 
+  dominant-baseline: middle; 
+}

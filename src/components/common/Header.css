@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-surface);
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.quiz-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    background: var(--gradient-text);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
+.plus-button{
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    transition: background-clour 0.2s, color 0.2s;
+}
+
+.plus-button:hover{
+    background-color: rgba(157, 78, 221, 0.1); 
+    color: var(--color-primary-hover);
+}
